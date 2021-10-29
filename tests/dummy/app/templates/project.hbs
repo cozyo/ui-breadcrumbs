@@ -1,0 +1,13 @@
+{{#bread-crumbs-item as |linkClass|}}
+  {{#if (eq currentRouteName "project.index")}}
+    Projects
+  {{else}}
+    {{link-to "Projects" "project" class=linkClass}}
+  {{/if}}
+{{/bread-crumbs-item}}
+
+{{#ember-wormhole to="heading"}}
+  <h1>Projects</h1>
+{{/ember-wormhole}}
+
+{{outlet}}

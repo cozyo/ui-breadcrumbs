@@ -1,0 +1,16 @@
+.breadcrumbs__item{
+  color: #888;
+}
+.breadcrumbs__item:not(:last-child):after{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  content: '';
+  background: url('/ui-breadcrumbs/assets/icons/baseline-chevron_right-24px.svg') no-repeat;
+  background-size: 12px 12px;
+  margin: 0 5px 0 2px;
+}
+
+.breadcrumbs__item a{
+  text-decoration: none;
+}

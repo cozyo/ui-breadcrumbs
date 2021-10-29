@@ -1,0 +1,13 @@
+<div id="heading"></div>
+
+{{bread-crumbs}}
+
+{{#unless (eq currentRouteName "index")}}
+  {{#bread-crumbs-item as |linkClass|}}
+    {{#link-to "index" class=linkClass}}<i class="zmdi zmdi-view-dashboard" alt="Dashboard"></i>{{/link-to}}
+  {{/bread-crumbs-item}}
+{{/unless}}
+
+<main>
+{{outlet}}
+</main>

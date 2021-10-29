@@ -1,0 +1,5 @@
+<div class="mb-4">{{link-to "new" "project.new"}}</div>
+
+{{#each model as |project|}}
+  <div>{{link-to project.title "project.detail" project.id}} [{{link-to "edit" "project.update" project.id}}]</div>
+{{/each}}

@@ -1,0 +1,9 @@
+{{#bread-crumbs-item as |linkClass|}}
+  {{link-to model.title "project.detail" model.id class=linkClass}}
+{{/bread-crumbs-item}}
+
+{{#bread-crumbs-item}}
+  Edit
+{{/bread-crumbs-item}}
+
+{{model.title}}
